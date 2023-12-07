@@ -1,5 +1,7 @@
 # Microsoft Graph Event Grid change notifications sample for .NET
 
+[![dotnet build](https://github.com/microsoftgraph/msgraph-sample-eventgrid-notifications-dotnet/actions/workflows/dotnet.yml/badge.svg)](https://github.com/microsoftgraph/msgraph-sample-eventgrid-notifications-dotnet/actions/workflows/dotnet.yml) ![License.](https://img.shields.io/badge/license-MIT-green.svg)
+
 Subscribe for [Microsoft Graph change notifications](https://learn.microsoft.com/graph/api/resources/webhooks) to be notified when your user's data changes, so you don't have to poll for changes.
 
 This sample ASP.NET Core web application shows how to subscribe for change notifications to be [delivered to Azure Event Grid](https://learn.microsoft.com/azure/event-grid/subscribe-to-graph-api-events).
