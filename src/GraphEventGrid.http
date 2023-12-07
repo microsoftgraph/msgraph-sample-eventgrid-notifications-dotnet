@@ -1,0 +1,16 @@
+# You can use this file to test your endpoints in VS Code
+# with the REST Client extension installed
+
+@GraphEventGrid_HostAddress = http://localhost:5251
+
+OPTIONS {{GraphEventGrid_HostAddress}}/userevents
+WebHook-Request-Origin: contoso.com
+
+###
+
+POST {{GraphEventGrid_HostAddress}}/userevents
+Content-Type: application/json
+
+{
+    "foo": "bar"
+}
