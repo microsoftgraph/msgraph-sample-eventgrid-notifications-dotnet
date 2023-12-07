@@ -9,15 +9,15 @@ using Microsoft.Graph.Models.ODataErrors;
 namespace GraphEventGrid.Handlers;
 
 /// <summary>
-/// Implements handlers for incoming user notifications
+/// Implements handlers for incoming notifications
 /// from Azure Event Grid.
 /// </summary>
-public static class UserEventHandler
+public static class NotificationEventHandler
 {
-    private static readonly string HandlerEndpoint = "/userevents";
+    private static readonly string HandlerEndpoint = "/notifications";
 
     /// <summary>
-    /// Maps the user event endpoints.
+    /// Maps the notification event endpoints.
     /// </summary>
     /// <param name="app">The <see cref="WebApplication"/> instance to map endpoints with.</param>
     public static void Map(WebApplication app)

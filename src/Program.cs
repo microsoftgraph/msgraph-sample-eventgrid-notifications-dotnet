@@ -45,7 +45,7 @@ app.UseHttpsRedirection();
 
 // Map event handler endpoints to receive
 // notifications from Azure Event Grid.
-UserEventHandler.Map(app);
+NotificationEventHandler.Map(app);
 
 // Register event handler to run after app has started
 // to ensure the notification subscription exists

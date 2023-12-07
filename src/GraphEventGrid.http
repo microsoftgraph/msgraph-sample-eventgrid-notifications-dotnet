@@ -3,14 +3,34 @@
 
 @GraphEventGrid_HostAddress = http://localhost:5251
 
-OPTIONS {{GraphEventGrid_HostAddress}}/userevents
+OPTIONS {{GraphEventGrid_HostAddress}}/notifications
 WebHook-Request-Origin: contoso.com
 
 ###
 
-POST {{GraphEventGrid_HostAddress}}/userevents
+POST {{GraphEventGrid_HostAddress}}/notifications
 Content-Type: application/json
 
 {
-    "foo": "bar"
+  "type": "Microsoft.Graph.UserUpdated",
+  "specversion": "1.0",
+  "source": "/tenants/e1ad7f5c-f009-4bbc-9d22-129eb7c92c5e/applications/eae2492c-9420-45a1-a85a-156fc21e3e01",
+  "subject": "Users/7540ee2b-ec66-4735-babd-ba1b2aa6c585",
+  "id": "fa1e6383-01d9-426a-9d8e-02a26556fb09",
+  "time": "2023-12-06T21:09:21.4354894Z",
+  "datacontenttype": "application/json",
+  "data": {
+    "changeType": "updated",
+    "clientState": "SomeSecretValue",
+    "resource": "Users/7540ee2b-ec66-4735-babd-ba1b2aa6c585",
+    "resourceData": {
+      "@odata.type": "#Microsoft.Graph.User",
+      "@odata.id": "Users/7540ee2b-ec66-4735-babd-ba1b2aa6c585",
+      "id": "7540ee2b-ec66-4735-babd-ba1b2aa6c585",
+      "organizationId": "e1ad7f5c-f009-4bbc-9d22-129eb7c92c5e"
+    },
+    "subscriptionExpirationDateTime": "2023-12-06T14:07:16.0603466-08:00",
+    "subscriptionId": "acdf75db-b5d6-4811-8995-aa3b5a7e42bd",
+    "tenantId": "e1ad7f5c-f009-4bbc-9d22-129eb7c92c5e"
+  }
 }
