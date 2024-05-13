@@ -16,7 +16,7 @@
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.11.3" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4" />
-    <PackageReference Include="Microsoft.Graph" Version="5.51.0" />
+    <PackageReference Include="Microsoft.Graph" Version="5.52.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
